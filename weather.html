@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KCK">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Oswald:wght@200..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <!--bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./javascript/javascript.js"></script>
+
+    <header class="bg-success-new text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div id="branding" class="d-flex align-items-center">
+                    <div class="logo">
+                        <img src="img/logo/Logo.png" alt="Logo">
+                    </div>
+                    <h1 class="ml-3"><span class="highlight">Nature </span> Conservancy</h1>
+                </div>
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="Activities.html">Activities</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="JoinUs.html">Join Us</a></li>
+                            <li class="nav-item"><a class="nav-link text-white" href="weather.html">Weather</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="showcase_weather">
+        <div class="container">
+            <h1>Understanding Our Planet's Weather</h1>
+            <p><b>Discover the various weather patterns and phenomena that shape our environment.</b></p>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- New Weather Information Section -->
+    <section id="weather-info" class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+                <h2>Today's Weather Overview</h2>
+                <p><b>Location:</b> Maldives</p>
+                <p><b>Temperature:</b> 30°C (86°F)</p>
+                <p><b>Humidity:</b> 70%</p>
+                <p><b>Wind Speed:</b> 15 km/h</p>
+                <p><b>Summary:</b> The Maldives is experiencing high temperatures and humidity today, typical of its tropical climate. However, rising sea levels and changing weather patterns due to climate change pose significant threats to the region.</p>
+            </div>
+            <div class="col-lg-4">
+                <h2>Weather Highlights</h2>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        High Temperature
+                        <span class="badge bg-primary rounded-pill">32°C</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Low Temperature
+                        <span class="badge bg-primary rounded-pill">28°C</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Rainfall Probability
+                        <span class="badge bg-primary rounded-pill">20%</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sunrise
+                        <span class="badge bg-primary rounded-pill">6:00 AM</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Sunset
+                        <span class="badge bg-primary rounded-pill">6:30 PM</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <h2>Climate Change in the Maldives</h2>
+                <p>Climate change is having profound impacts on the Maldives, an island nation in the Indian Ocean. Due to its low elevation, the Maldives is particularly vulnerable to rising sea levels, which threaten to submerge many of its islands. In addition to rising sea levels, the Maldives is also experiencing more frequent and severe weather events, including heavy rainfall and strong winds, which can cause flooding and damage to infrastructure.</p>
+                <p>These changes are not just environmental but also have significant socio-economic implications. The Maldives relies heavily on tourism and fishing, both of which are being affected by climate change. Coral bleaching, caused by rising sea temperatures, is damaging the reefs that attract tourists and support marine life.</p>
+                <p>Efforts are being made to mitigate and adapt to these changes, including the development of resilient infrastructure, improved disaster preparedness, and initiatives to protect and restore marine ecosystems. However, the challenges posed by climate change require global cooperation and significant resources to ensure the survival and prosperity of the Maldives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-body py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-lg btn-success-new btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-success-new btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-success-new btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-lg btn-success-new btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Popular Link</h4>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Annual Conference</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Our Services</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Our Reports</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Latest News</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Business Ethics</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Useful Link</h4>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Terms of Use</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Cookies</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Help</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> FQAs</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Anti-Poaching</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Best News</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-white">Volunteers of the Month</h4>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Luu Minh Chien</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Eminem</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Michael Linden</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Simon Green</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Natalie Channing</a>
+                        <a href=""><i class="fas fa-angle-right me-2"></i> Caroline Gerwig</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
