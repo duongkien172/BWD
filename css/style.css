@@ -1,31 +1,22 @@
-body{
+body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: #f4f4f4;
 }
-/*-----------global-----------*/
-.container{
-    width:80%;
-    margin:auto;
-    overflow:hidden;
 
+.bg-success-new{
+    --bs-bg-opacity: 1;
+    background-color: #6ab04c !important;
 }
-
-ul{
-    margin:0;
-    padding:0;
-}
-
-.body-text{
+.body-text {
     font-size: 20px;
     text-align: justify;
     padding-left: 30px;
     padding-right: 30px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 800px; /* Điều chỉnh độ rộng tối đa của văn bản tùy theo nhu cầu */
+    max-width: 800px;
 }
-
 
 .title-underline {
     text-transform: uppercase;
@@ -38,95 +29,79 @@ ul{
     text-align: center;
 }
 
-
-/*-----------Header------------- */
-header{
-    background:#6ab04c;
-    color:#ffffff;
-    padding-top:20px;
+header {
+    background: #6ab04c;
+    color: #ffffff;
+    height: 110px;
     min-height: 70px;
     border-bottom: rgb(44, 62, 80) 3px solid;
-}
+    
 
-header a{
+}
+header a {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 600;
     font-style: normal;
     color: #ffffff;
-    text-decoration:none;
+    text-decoration: none;
     text-transform: uppercase;
-    font-size:22px;    
+    font-size: 22px;    
 }
 
-header li{
-    float:left;
-    display:inline;
-    padding: 0 20px 0 20px;
+#branding h1{
+    padding-bottom: 15px;
+}
+.navbar-nav .nav-link {
+    font-size: 25px; /* Thiết lập kích thước font chữ */
+    /* Các thuộc tính khác nếu cần */
 }
 
-header #branding{
-    float: left;
-}
-header #branding h1{
-    margin: 0;
-    margin-left: 40px;
+.navbar-nav{
+    padding-bottom: 20px;
 }
 
-header nav{   
-    float: right;
-    margin-bottom: 20px;
-    margin-top: 10px;
+.navbar-nav li{
+    margin-left: 10px;
+    
 }
-
-header .highlight, header .current a{
+header .highlight, header .nav-item-current {
     color: #e8491d;
     font-weight: bold;
 }
-
-header a:hover{
+header a:hover {
     color: #cccccc;
     font-weight: bold;
 }
-/* Logo */
+/*--------Logo---------*/
 .logo img {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    width: 100px; /* Kích thước mặc định của logo */
-    height: auto; /* Đảm bảo tỷ lệ ban đầu của logo */
-    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+    width: 100px;
+    height: auto;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+    margin-left: 0px;
 }
-
-/* Responsive header */
 @media screen and (max-width: 768px) {
     .logo img {
-        width: 80px; /* Điều chỉnh kích thước logo cho màn hình nhỏ hơn */
+        width: 80px;
+        
     }
-    header #branding h1 {
-        margin-left: 60px;
-    }
-    header nav{   
-        margin-left: 50px;
-    
+}
+@media screen and (max-width: 480px) {
+    .logo img {
+        width: 80px;
+       
     }
 }
 
-@media screen and (max-width: 480px) {
-    .logo img {
-        width: 80px; /* Điều chỉnh kích thước logo cho màn hình nhỏ hơn */
-    }
-    header #branding h1 {
-        margin-left: 60px;
-    }
-    header nav{   
-        margin-left: 50px;
-    
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 8px;
     }
 }
 
 /*--------show case*---------*/
 #showcase{
-    padding:100px;
+    padding:150px;
     padding-bottom: 50px; 
     min-height: 400px;
     background: url('../img/showcase.jpg') no-repeat center center;
@@ -147,31 +122,20 @@ header a:hover{
     font-size: 20px;
 }
 
-/*-----------Newsletter----------*/
-#newsletter{   
+#newsletter {   
     padding: 10px;
     color: #ffffff;
     background: #6ab04c;
 }
-
-#newsletter h1{
-    float: left;
-    font-size:30px;
+#newsletter h1 {
+    font-size: 30px;
 }
-
-#newsletter form{
-    float: right;
-    margin-top: 28px;
-}
-
-#newsletter input[type="email"]{
+#newsletter input[type="email"] {
     padding: 4px;
     height: 30px;
     width: 250px;
 }
-
-
-.button_1{
+.button_1 {
     height: 40px ;
     background: #e8491d;
     border: 0;
@@ -179,83 +143,80 @@ header a:hover{
     padding-right: 20px;
     color: #ffffff;
 }
-
 .button_1:hover {
     background: #d4381a;
 }
+.container-fluid {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+.text-center {
+    margin-bottom: 50px;
+}
+.text-uppercase {
+    color: #e13030;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
 
-/*** Events Start ***/
-/* Container for the events section */
+/* Events Section */
 .container-fluid {
     background-color: #f8f9fa; /* Light grey background */
     padding: 50px 0; /* Vertical padding */
 }
 
-/* Centered text content */
- .text-center {
+.text-center {
     margin-bottom: 50px; /* Space below the header */
     text-align: center;
- }
+}
 
-/* Header styling */
 .text-uppercase {
     color: #e13030; /* Dark grey color */
     font-size: 1.2em; /* Slightly larger font */
     letter-spacing: 2px; /* Spacing between letters */
 }
 
-
-
-/* Event carousel container */
 .event-carousel {
     display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to next line */
     overflow-x: auto; /* Horizontal scroll for overflow */
-    gap: 30px; /* Space between items */
+    gap: 10px; /* Space between items */
     padding: 20px 0; /* Vertical padding */
 }
 
-/* Individual event item */
 .event-item {
     background: #fff; /* White background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
     overflow: hidden; /* Hide overflow */
-    flex: 0 0 300px; /* Fixed width */
     transition: transform 0.3s; /* Smooth transform */
+    min-width: 300px; /* Adjust width of each item */
+    height: 500px; /* Increase height of each item */
 }
 
-/* Scale on hover */
 .event-item:hover {
     transform: scale(1.05); /* Slightly larger */
 }
 
-/* Event image */
 .event-item img {
     border-bottom: 2px solid #ddd; /* Bottom border */
     max-height: 200px; /* Fixed height */
     object-fit: cover; /* Cover the area */
+    width: 100%; /* Make images responsive */
 }
 
-/* Event content */
 .event-content {
     padding: 20px; /* Padding inside content */
+    height: calc(100% - 200px); /* Adjust content height based on image height */
 }
 
-/* Flex container for location and date */
-.d-flex {
-    justify-content: space-between; /* Space between items */
-    
-    height: 290px;
-}
 
-/* Location and date text */
+
 .text-body {
     color: #6c757d; /* Muted grey */
     font-size: 0.9em; /* Slightly smaller font */
 }
 
-
-/* Read more button */
 .btn-hover {
     display: inline-block; /* Inline-block display */
     padding: 10px 20px; /* Padding */
@@ -265,75 +226,80 @@ header a:hover{
     text-decoration: none; /* No underline */
     transition: background-color 0.3s; /* Smooth background change */
 }
- 
-/* Button hover effect */
+
 .btn-hover:hover {
     background-color: #ff6810; 
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .event-item {
+        min-width: 45%; /* Adjust width of each item on medium screens */
+        height: auto; /* Adjust height */
+    }
+}
 
-/*** Events End ***/
+@media (max-width: 576px) {
+    .event-item {
+        min-width: 100%; /* Adjust width of each item on small screens */
+        height: auto; /* Adjust height */
+    }
+}
 
-
-/* Boxes */
+/*-------Misson-------*/
 .image-container {
     display: flex;
-    width: 800px; /* Chiều rộng cố định */
-    height: 370px; /* Chiều dài cố định */
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 55px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 15px;
     padding-right: 15px;
 }
-
 .image {
     position: relative;
-    float: left; /* Đảm bảo các hình ảnh được xếp theo hàng ngang */
-    width: 33.33%; /* Phần trăm chiều rộng để chia đều không gian */
-    height: 100%; /* Chiều cao của mỗi hình ảnh */
-    overflow: hidden; /* Ẩn bất kỳ phần nào của hình ảnh vượt ra ngoài khung */
-    box-sizing: border-box; /* Đảm bảo padding và border không tăng kích thước của phần tử */
-    vertical-align: middle;
+    
+    margin: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
 }
-
 .image img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
-    transition: transform 0.3s ease;
+    object-fit: cover;
 }
-
-.image:hover img {
-    transform: scale(1.1); /* Phóng to hình ảnh lên 110% khi rê chuột vào */
+.image:hover {
+    transform: scale(1.1);
 }
-
 .overlay {
     position: absolute;
     bottom: 0;
-    color: #fff; /* White text color */
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 10px 0 20px;
+    left: 0;
+    right: 0;
+    background-color: rgba(128, 120, 120, 0.656);
+    overflow: hidden;
+    width: 242px;
+    height: 0;
+    transition: .5s ease;
 }
-
+.image:hover .overlay {
+    height: 100%;
+}
 .caption {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 30px;
-    margin-bottom: 20px;
-    
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-transform: uppercase;
 }
-
-
-
-/* footer */
-footer{
+footer {
     padding: 20px;
     margin-top: 20px;
-    color: #333; /* Updated color */
-    background-color: #f4f4f4; /* Lighter background color */
+    color: #333;
+    background-color: #f4f4f4;
     text-align: center;  
 }
 
