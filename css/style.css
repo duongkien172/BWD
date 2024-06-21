@@ -164,7 +164,7 @@ header a:hover {
 }
 
 #showcase_wildlife{
-    padding:150px;
+    padding:500px;
     padding-bottom: 50px; 
     min-height: 200px;
     background: url('../img/showcases/wildlife.jpg') no-repeat center center;
@@ -175,7 +175,7 @@ header a:hover {
 }
 
 #showcase_weather{
-    padding:150px;
+    padding:500px;
     padding-bottom: 50px; 
     min-height: 200px;
     background: url('../img/showcases/weather.jpg') no-repeat center center;
@@ -186,7 +186,7 @@ header a:hover {
 }
 
 #showcase_foods{
-    padding:150px;
+    padding:500px;
     padding-bottom: 50px; 
     min-height: 200px;
     background: url('../img/showcases/foods.jpg') no-repeat center center;
@@ -376,6 +376,7 @@ header a:hover {
     transform: translate(-50%, -50%);
     white-space: nowrap;
     text-transform: uppercase;
+    text-transform: var();
 }
 footer {
     padding: 20px;
@@ -770,7 +771,7 @@ footer {
 
 #animal-gallery .animal-item img {
     width: 100%;
-    height: 250px; 
+    height: 390px; 
     object-fit: cover; 
 }
 
