@@ -4,10 +4,6 @@ body {
     background-color: #f4f4f4;
 }
 
-.bg-success-new{
-    --bs-bg-opacity: 1;
-    background-color: #6ab04c !important;
-}
 .body-text {
     font-size: 20px;
     text-align: justify;
@@ -29,15 +25,13 @@ body {
     text-align: center;
 }
 
-header {
-    background: #6ab04c;
-    color: #ffffff;
-    height: 110px;
-    min-height: 70px;
-    border-bottom: rgb(44, 62, 80) 3px solid;
-    
 
+
+.bg-success-new{
+    --bs-bg-opacity: 1;
+    background-color: #6ab04c !important;
 }
+
 header a {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 600;
@@ -48,22 +42,80 @@ header a {
     font-size: 22px;    
 }
 
+@media (max-width: 992px) {
+    .offcanvas-end {
+        transform: translateX(100%);
+    }
+
+    .offcanvas.show {
+        transform: translateX(0);
+    }
+}
+
 #branding h1{
     padding-bottom: 15px;
 }
-.navbar-nav .nav-link {
-    font-size: 25px; /* Thiết lập kích thước font chữ */
-    /* Các thuộc tính khác nếu cần */
+
+/*---- navbar -----*/
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    padding-left: 10px;
 }
 
-.navbar-nav{
-    padding-bottom: 20px;
+.pe-3 {
+    padding-right: 80px !important;
 }
 
-.navbar-nav li{
-    margin-left: 10px;
-    
+.navbar-nav {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 20px;
 }
+
+.navbar-brand-new {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: 30px;
+    margin-right: var(--bs-navbar-brand-margin-end);
+    font-size: var(--bs-navbar-brand-font-size);
+    color: var(--bs-navbar-brand-color);
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 30px;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 80px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0; 
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 header .highlight, header .nav-item-current {
     color: #e8491d;
     font-weight: bold;
@@ -95,16 +147,16 @@ header a:hover {
 
 @media (min-width: 768px) {
     .container, .container-md, .container-sm {
-        max-width: 8px;
+        max-width: 60px;
     }
 }
 
 /*--------show case*---------*/
 #showcase{
-    padding:150px;
-    padding-bottom: 50px; 
+    padding: 200px;
+    /* padding-bottom: 50px; */
     min-height: 400px;
-    background: url('../img/showcase.jpg') no-repeat center center;
+    background: url(../img/showcase.jpg) no-repeat center center;
     background-size: cover;
     background-position: center top;
     text-align: center;
@@ -146,10 +198,7 @@ header a:hover {
 .button_1:hover {
     background: #d4381a;
 }
-.container-fluid {
-    background-color: #f8f9fa;
-    padding: 50px 0;
-}
+
 .text-center {
     margin-bottom: 50px;
 }
@@ -162,7 +211,7 @@ header a:hover {
 /* Events Section */
 .container-fluid {
     background-color: #f8f9fa; /* Light grey background */
-    padding: 50px 0; /* Vertical padding */
+    padding: 0px 0; /* Vertical padding */
 }
 
 .text-center {
@@ -315,6 +364,7 @@ footer hr {
     background-color: #ffffff;
     border-radius: 10px;
     margin-bottom: 20px;
+    padding-top: 90px;
 }
 
 #about-us h2 {
@@ -455,10 +505,15 @@ footer {
     border: none; /* Remove border around the iframe */
 }
 
+/* activities */
+#Activities {
+    padding-top: 70px;
+}
+
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 /* Additional CSS for Signup Page */
-/* Additional CSS for Signup Page */
+
 
 /* Signup Section */
 #signup {
@@ -571,6 +626,7 @@ footer {
 #news .container {
     margin: 20px 0;
     padding-left: 60px;
+    padding-top: 70px
 }
 
 .news-item {

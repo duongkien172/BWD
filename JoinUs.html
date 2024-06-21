@@ -9,45 +9,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
       <!--bootstrap -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" > 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+
 <!-- Header -->
 <header class="bg-success-new text-white py-3">
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-            <div id="branding" class="d-flex align-items-center">
-                <div class="logo">
-                    <img src="img/logo/Logo.png" alt="Logo">
-                </div>
-                <h1 class="ml-3"><span class="highlight">Nature </span>Conservancy</h1>
-            </div>
-            <nav class="navbar navbar-expand-md navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item-current"><a class="nav-link text-white" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="Activities.html">Activities</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="news.html">News</a></li>
-                        <li class="nav-item"><a class="nav-link text-white" href="JoinUs.html">Join Us</a></li>
-                    </ul>
-                </div>
-            </nav>
+            
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                        <div class="logo">
+                            <img src="img/logo/Logo.png" alt="Logo">
+                        </div>
+                      <a class="navbar-brand" href="index.html"><span class="highlight">Nature </span>Conservancy</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Activities.html">Activities</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="news.html">News</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="JoinUs.html">Join Us</a>
+                              </li>
+                            
+                          </ul>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            
+              </nav>
         </div>
     </div>
 </header>
 
 
-<section id="newsletter">
+<!-- <section id="newsletter">
     <div class="container">
         <h1>Subcribe To Our Newsletter </h1>
         <form>
@@ -55,7 +81,7 @@
             <button type="submit" class="button_1">Subcribe</button>
         </form>
     </div>
-</section>
+</section> -->
 
 <section id="gallery">
     <div class="container">
@@ -113,20 +139,7 @@
     </div>
 </section>
 
-<footer>
-    <hr>
-    <div class="container">
-        <div class="footer-content">
-            <div class="social-media">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-            <p> Nature Conservancy, &copy; 2024</p>
-        </div>
-    </div>
-</footer>
+
 
      <!-- Footer Start -->
      <div class="container-fluid footer bg-dark text-body py-5">
@@ -135,7 +148,6 @@
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item">
                         <h4 class="mb-4 text-white">Newsletter</h4>
-                        <p class="mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
                         <div class="position-relative mx-auto">
                             <input class="form-control border-0 bg-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
                             <button type="button" class="btn-hover-bg btn btn-primary position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
@@ -175,61 +187,7 @@
                         <a href=""><i class="fas fa-angle-right me-2"></i> Caroline Gerwig</a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="footer-item">
-                        <h4 class="mb-4 text-white">Our Gallery</h4>
-                        <div class="row g-2">
-                            <div class="col-4">
-                                <div class="footer-gallery">
-                                    <img src="img/gallery-footer-1.jpg" class="img-fluid w-100" alt="">
-                                    <div class="footer-search-icon">
-                                        <a href="img/gallery-footer-1.jpg" data-lightbox="footerGallery-1" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="col-4">
-                                <div class="footer-gallery">
-                                    <img src="img/gallery-footer-2.jpg" class="img-fluid w-100" alt="">
-                                    <div class="footer-search-icon">
-                                        <a href="img/gallery-footer-2.jpg" data-lightbox="footerGallery-2" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                    </div>
-                                </div>
-                           </div>
-                            <div class="col-4">
-                                <div class="footer-gallery">
-                                    <img src="img/gallery-footer-3.jpg" class="img-fluid w-100" alt="">
-                                    <div class="footer-search-icon">
-                                        <a href="img/gallery-footer-3.jpg" data-lightbox="footerGallery-3" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                    </div>
-                                </div>
-                           </div>
-                            <div class="col-4">
-                                <div class="footer-gallery">
-                                    <img src="img/gallery-footer-4.jpg" class="img-fluid w-100" alt="">
-                                    <div class="footer-search-icon">
-                                        <a href="img/gallery-footer-4.jpg" data-lightbox="footerGallery-4" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                    </div>
-                                </div>
-                           </div>
-                            <div class="col-4">
-                                <div class="footer-gallery">
-                                    <img src="img/gallery-footer-5.jpg" class="img-fluid w-100" alt="">
-                                    <div class="footer-search-icon">
-                                        <a href="img/gallery-footer-5.jpg" data-lightbox="footerGallery-5" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                    </div>
-                                </div>
-                           </div>
-                           <div class="col-4">
-                                <div class="footer-gallery">
-                                    <img src="img/gallery-footer-6.jpg" class="img-fluid w-100" alt="">
-                                    <div class="footer-search-icon">
-                                        <a href="img/gallery-footer-6.jpg" data-lightbox="footerGallery-6" class="my-auto"><i class="fas fa-search-plus text-white"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>
