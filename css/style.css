@@ -1,0 +1,716 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/*-----------global-----------*/
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+
+}
+
+ul{
+    margin:0;
+    padding:0;
+}
+
+.body-text{
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px; /* Điều chỉnh độ rộng tối đa của văn bản tùy theo nhu cầu */
+}
+
+
+.title-underline {
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+/*-----------Header------------- */
+header{
+    background:#6ab04c;
+    color:#ffffff;
+    padding-top:20px;
+    min-height: 70px;
+    border-bottom: rgb(44, 62, 80) 3px solid;
+}
+
+header a{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:22px;    
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+    margin-left: 40px;
+}
+
+header nav{   
+    float: right;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+/* Logo */
+.logo img {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 100px; /* Kích thước mặc định của logo */
+    height: auto; /* Đảm bảo tỷ lệ ban đầu của logo */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+/* Responsive header */
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 80px; /* Điều chỉnh kích thước logo cho màn hình nhỏ hơn */
+    }
+    header #branding h1 {
+        margin-left: 60px;
+    }
+    header nav{   
+        margin-left: 50px;
+    
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo img {
+        width: 80px; /* Điều chỉnh kích thước logo cho màn hình nhỏ hơn */
+    }
+    header #branding h1 {
+        margin-left: 60px;
+    }
+    header nav{   
+        margin-left: 50px;
+    
+    }
+}
+
+/*--------show case*---------*/
+#showcase{
+    padding:100px;
+    padding-bottom: 50px; 
+    min-height: 400px;
+    background: url('../img/showcase.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center top;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/*-----------Newsletter----------*/
+#newsletter{   
+    padding: 10px;
+    color: #ffffff;
+    background: #6ab04c;
+}
+
+#newsletter h1{
+    float: left;
+    font-size:30px;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 28px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 30px;
+    width: 250px;
+}
+
+
+.button_1{
+    height: 40px ;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.button_1:hover {
+    background: #d4381a;
+}
+
+/*** Events Start ***/
+/* Container for the events section */
+.container-fluid {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 50px 0; /* Vertical padding */
+}
+
+/* Centered text content */
+ .text-center {
+    margin-bottom: 50px; /* Space below the header */
+    text-align: center;
+ }
+
+/* Header styling */
+.text-uppercase {
+    color: #e13030; /* Dark grey color */
+    font-size: 1.2em; /* Slightly larger font */
+    letter-spacing: 2px; /* Spacing between letters */
+}
+
+
+
+/* Event carousel container */
+.event-carousel {
+    display: flex;
+    overflow-x: auto; /* Horizontal scroll for overflow */
+    gap: 30px; /* Space between items */
+    padding: 20px 0; /* Vertical padding */
+}
+
+/* Individual event item */
+.event-item {
+    background: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    overflow: hidden; /* Hide overflow */
+    flex: 0 0 300px; /* Fixed width */
+    transition: transform 0.3s; /* Smooth transform */
+}
+
+/* Scale on hover */
+.event-item:hover {
+    transform: scale(1.05); /* Slightly larger */
+}
+
+/* Event image */
+.event-item img {
+    border-bottom: 2px solid #ddd; /* Bottom border */
+    max-height: 200px; /* Fixed height */
+    object-fit: cover; /* Cover the area */
+}
+
+/* Event content */
+.event-content {
+    padding: 20px; /* Padding inside content */
+}
+
+/* Flex container for location and date */
+.d-flex {
+    justify-content: space-between; /* Space between items */
+    
+    height: 290px;
+}
+
+/* Location and date text */
+.text-body {
+    color: #6c757d; /* Muted grey */
+    font-size: 0.9em; /* Slightly smaller font */
+}
+
+
+/* Read more button */
+.btn-hover {
+    display: inline-block; /* Inline-block display */
+    padding: 10px 20px; /* Padding */
+    color: #fff; /* White text */
+    background-color: #007bff; /* Blue background */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+ 
+/* Button hover effect */
+.btn-hover:hover {
+    background-color: #ff6810; 
+}
+
+
+/*** Events End ***/
+
+
+/* Boxes */
+.image-container {
+    display: flex;
+    width: 800px; /* Chiều rộng cố định */
+    height: 370px; /* Chiều dài cố định */
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 55px;
+    padding-right: 15px;
+}
+
+.image {
+    position: relative;
+    float: left; /* Đảm bảo các hình ảnh được xếp theo hàng ngang */
+    width: 33.33%; /* Phần trăm chiều rộng để chia đều không gian */
+    height: 100%; /* Chiều cao của mỗi hình ảnh */
+    overflow: hidden; /* Ẩn bất kỳ phần nào của hình ảnh vượt ra ngoài khung */
+    box-sizing: border-box; /* Đảm bảo padding và border không tăng kích thước của phần tử */
+    vertical-align: middle;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(1.1); /* Phóng to hình ảnh lên 110% khi rê chuột vào */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    color: #fff; /* White text color */
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0 20px;
+}
+
+.caption {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+/* footer */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #333; /* Updated color */
+    background-color: #f4f4f4; /* Lighter background color */
+    text-align: center;  
+}
+
+footer hr {
+    margin-bottom: 10px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*ABOUT US PART */
+/* About Us Section */
+#about-us {
+    padding: 40px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about-us h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+#about-us h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+#about-us p,
+#about-us ul {
+    font-size: 16px;
+    color: #555;
+}
+
+#about-us ul li {
+    margin-bottom: 10px;
+}
+
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial strong {
+    color: #e8491d;
+}
+
+.video-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ABOUT SUSSSS*/
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #333; /* Updated color */
+    background-color: #f4f4f4; /* Lighter background color */
+    text-align: center;
+    
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 20px;
+}
+
+.team-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-image {
+    width: 30%; /* Resize width to 200px */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add slight rounding to image corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); /* Add subtle shadow for a polished look */
+}
+
+/* Wildlife Section */
+.wildlife-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.wildlife-card {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+}
+
+.wildlife-image {
+    width: 100%; /* Make image full width of container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add slight rounding to image corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow for a polished look */
+}
+/* Video Section */
+.video-section {
+    margin-top: 30px; /* Add some space at the top of the video section */
+    padding: 20px; /* Add padding around the section */
+    background-color: #e9f7ef; /* Optional: Choose a background color for the video section */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    text-align: center; /* Center-align the content */
+}
+
+.video-section h3 {
+    margin-bottom: 10px; /* Add space below the heading */
+    color: #333; /* Choose a text color for the heading */
+    font-weight: bold; /* Make the heading bold */
+}
+
+.video-section iframe {
+    width: 100%; /* Make the video width responsive */
+    height: 400px; /* Set the height of the video */
+    border: none; /* Remove border around the iframe */
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+/* Additional CSS for Signup Page */
+/* Additional CSS for Signup Page */
+
+/* Signup Section */
+#signup {
+    padding: 50px 0;
+    background-color: #f4f4f4; /* Match background color of main page */
+}
+
+#signup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6ab04c; /* Match main page accent color */
+}
+
+#signup p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px; /* Increase font size for better readability */
+}
+
+#signup form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff; /* Match background color of main page content */
+    padding: 30px; /* Increase padding for better spacing */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+#signup .form-group {
+    margin-bottom: 20px;
+}
+
+#signup label {
+    display: block;
+    font-weight: bold;
+}
+
+#signup input[type="text"],
+#signup input[type="email"],
+#signup textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#signup textarea {
+    height: 100px;
+}
+
+#signup button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #6ab04c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#signup button:hover {
+    background-color: #4e8231; /* Darker shade for hover effect */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    #signup form {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Gallery Section ====================================================================== */
+#gallery {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+
+#gallery h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* ============================================================================= NEWS */
+
+/* News Section */
+#news .container {
+    margin: 20px 0;
+    padding-left: 60px;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.news-image img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-content h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.news-content p {
+    margin: 0 0 10px;
+}
+
+.button_1 {
+    background-color: #e8491d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.button_1:hover {
+    background-color: #e8491d;
+}
+
+.pay-to-see-more {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: #666;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.pay-to-see-more a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.pay-to-see-more a:hover {
+    color: #3498db;
+}
+
+/* Modal overlay */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(255, 255, 255); 
+    z-index: 1000; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Modal content */
+.modal-content {
+    width: 80%;
+    height: 70%;
+    padding: 20px;
+    border-radius: 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow-y: auto;
+   
+}
+
+/* Close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
