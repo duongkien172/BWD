@@ -670,6 +670,98 @@ footer {
     cursor: pointer;
 }
 
+/* ANIMALS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#animal-gallery .animal-item img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+}
+
+#animal-gallery .animal-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#animal-gallery .animal-content {
+    text-align: center;
+    padding: 10px;
+}
+
+/* FOODS */
+/* Add these styles to your style.css file */
+
+/* General reset for box-sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.weather-icon {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.weather-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.weather-card p {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #666;
+}
+
+/* FOODS */
+#food-concerns h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#food-concerns p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+#food-concerns .list-group-item {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    border: none;
+    background: transparent;
+}
+
+
+
+
 
 
 
